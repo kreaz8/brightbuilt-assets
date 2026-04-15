@@ -1,0 +1,28 @@
+.gl-post-banner{
+  width:100vw;
+  max-width:100vw;
+  position:relative;
+  left:50%;
+  right:auto;
+  margin-left:-50vw;
+  margin-right:0;
+  overflow:hidden;
+  min-height:0;
+  max-height:none;
+  aspect-ratio:initial;
+}
+
+.gl-post-banner__img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+
+.blog-item-wrapper,
+.blog-item-wrapper .blog-item-inner-wrapper,
+.blog-item-wrapper .blog-item-content-wrapper{
+  overflow:visible!important;
+}
