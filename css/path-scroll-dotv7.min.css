@@ -1,0 +1,54 @@
+.gls-scrollpath-host{
+  position: relative !important;
+  overflow: visible !important;
+}
+.gls-scrollpath{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.gls-scrollpath svg{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.gls-scrollpath [data-gls-guide]{
+  fill: none !important;
+  stroke: transparent !important;
+}
+.gls-scrollpath [data-gls-dotted]{
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.gls-scrollpath [data-gls-dot]{
+  transition: opacity 0.15s linear;
+}
+.gls-scrollpath[data-gls-mode="band"]{
+  inset: auto;
+  left: 0;
+  right: 0;
+  top: var(--gls-band-top, 0px);
+  height: var(--gls-band-height, 360px);
+}
+@media (max-width: 767px){
+  .gls-scrollpath[data-gls-mode="band"]{
+    top: var(--gls-band-top-mobile, var(--gls-band-top, 0px));
+    height: var(--gls-band-height-mobile, 240px);
+  }
+}
+.gls-scrollpath[data-gls-fullbleed="1"]{
+  left: 50% !important;
+  right: auto !important;
+  width: 100vw !important;
+  transform: translateX(-50%) !important;
+  max-width: none !important;
+}
+.gls-scrollpath,
+.gls-scrollpath svg{
+  overflow: visible !important;
+}
+
+.gls-scrollpath-host {
+  overflow: clip !important;
+}
