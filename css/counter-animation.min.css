@@ -1,0 +1,6 @@
+  /* Optional: make them look like plain text instead of links */
+  a[href^="#gls-count"] {
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+  }
